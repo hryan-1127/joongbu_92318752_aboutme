@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">H의 정보 사이트</a>
+            <ul class="nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="container">
+            <h1>저는 중부대학교에 다니고 있는 정보보호학과 2학년 황승민입니다!</h1>
+            <h3>저에 대해 더 알고 싶으면 :
+                <a href="https://blog.naver.com/hryan1127/">앞으로 여러 가지를 올릴 예정인 저의 블로그 입니다</a>
+                <p>Home를 누르시면 초기 화면으로 돌아옵니다<br>
+                    About를 누르시면 저의 대한 정보를 추가로 보실 수 있습니다<br>
+                    contact를 누르시면 저의 기본 연락처를 보실 수 있습니다
+                </p>
+                
+                <p>제가 참고 할때 보는 기본서입니다 :
+                    <a href="https://www.w3schools.com/html/default.asp">html기본 |</a>
+                    <a href="https://www.w3schools.com/css/default.asp">css기본 | </a>
+                    <a href="https://www.w3schools.com/js/default.asp">js기본 |</a>
+                    <a href="https://www.w3schools.com/python/default.asp">파이썬기본 |</a>
+                    <a href="https://www.w3schools.com/sql/default.asp">SQL기본</a>
+                </p>
+                <p>현재시간 : <span id="time"></span></p>
+                <hr>
+                <p>배경색 변경 :
+                    <button onclick="changeColor('pink')">Pink</button>
+                    <button onclick="changeColor('lightblue')">Lightblue</button>
+                    <button onclick="changeColor('yellow')">Yellow</button>
+                    <button onclick="changeColor('white')">Reset</button>
+                </p>
+                <p>
+                    웹 프로그래밍의 3요소 :
+                <button 
+                onmouseover="showImg('img/html.jpg','HTML은 웹페이지 구조를 만드는 언어입니다')"
+                onmouseout="hideImg()">HTML</button>
+
+                <button 
+                onmouseover="showImg('img/css.jpg','CSS는 웹페이지 디자인을 담당합니다')"
+                onmouseout="hideImg()">CSS</button>
+
+                <button 
+                onmouseover="showImg('img/js.jpg','JavaScript는 웹페이지를 동적으로 만듭니다')"
+                onmouseout="hideImg()">JAVASCRIPT</button>
+                </p>
+                <hr>
+                <br>
+                <div>
+                    <img id="fig" height="300px">
+                    <p id="desc"></p>
+                </div>
+            </h3>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
